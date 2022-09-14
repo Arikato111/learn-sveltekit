@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div>
-    <h1>Just Contact page</h1>
+    <h1>Try: use API with axios</h1>
     <hr>
     <Chucknorris />
 </div>

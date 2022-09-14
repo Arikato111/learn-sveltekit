@@ -12,32 +12,10 @@
   fetchApi();
 </script>
 
-<div class="box">
-  <div class="content">{data}</div>
-  <button on:click={fetchApi}>Refresh</button>
+<div class="text-center m-3">
+  <button class="p-2 border-2 rounded bg-blue-300 text-white shadow-slate-600 shadow-md active:translate-y-1 transition-all active:shadow-none" on:click={fetchApi}>Refresh</button>
+  <div class="m-3 text-lg text-slate-600">{data}</div>
 </div>
 
 <style>
-  .box {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 7px;
-    border-radius: 4px;
-  }
-  .content {
-    margin: 10px;
-  }
-  button {
-    padding: 7px;
-    /* border: 1px solid gray; */
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 3px 1px gray;
-    transition: .2s;
-}
-button:active {
-    box-shadow: none;
-    transform: translate(0, 4px);
-    transition: .2s;
-  }
 </style>

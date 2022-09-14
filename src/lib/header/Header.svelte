@@ -26,7 +26,9 @@
 			</li>
 			<li class:active={$page.url.pathname == '/contact'}>
 				<a href="/contact">Contact</a>
-
+			</li>
+			<li class:active={$page.url.pathname == '/testtodo'}>
+				<a href="/testtodo">Test Todo</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -34,8 +36,8 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+	<div class="corner p-1">
+		<a target="_blank" href="https://github.com/Arikato111/learn-sveltekit">Gihub</a>
 	</div>
 </header>
 
