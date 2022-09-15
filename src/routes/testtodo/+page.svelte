@@ -1,8 +1,8 @@
 <script>
   let todoList = [
-    { title: "list-1", done: false },
-    { title: "list-2", done: false },
-    { title: "list-3", done: false },
+    { title: "example-1", done: false },
+    { title: "example-2", done: false },
+    { title: "example-3", done: true },
   ];
   let getError = "";
   let input = "";
@@ -28,7 +28,7 @@
   }
 </script>
 
-<div class="bg-gray-100 p-3 text-lg text-center">
+<div class="bg-gray-100 p-3 text-lg text-center rounded-md">
   <div class="text-rose-600">{getError}</div>
   <div>
     <input
@@ -47,7 +47,7 @@
         on:change={(e) => console.log(e)}
       />
       {#if list.done}
-        <strike>
+        <strike class="text-slate-400">
           {list.title}
         </strike>
       {:else}
