@@ -1,21 +1,11 @@
 <script>
   let code = "@ <br> <div align=\"left\">hello world</div>";
-  addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.key == "k") {
-      /* Do whatever */
-      console.log(e);
-      // @ts-ignore
-      window.document.getElementById("input").focus();
-      e.preventDefault();
-    }
-  });
 </script>
 
 <div>
   <textarea
-    id="input"
-    placeholder="Ctrl + k to focus"
     class="w-full p-2 focus:outline-none rounded"
+    placeholder="input html code"
     rows="10"
     bind:value={code}
   ></textarea>
