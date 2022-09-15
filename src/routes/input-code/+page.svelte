@@ -2,6 +2,11 @@
   let code = "@ <br> <div align=\"left\">hello world</div>";
 </script>
 
+<svelte:head>
+    <title>input code</title>
+    <meta name="description" content="display html code on html code">
+</svelte:head>
+
 <div>
   <textarea
     class="w-full p-2 focus:outline-none rounded"

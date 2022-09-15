@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>todo list</title>
+</svelte:head>
+
 <script>
   let todoList = [
     { title: "example-1", done: false },

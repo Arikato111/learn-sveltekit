@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>Contact</title>
+    <title>I mean api</title>
     <meta name="description" content="just for test 555">
 </svelte:head>
 
