@@ -28,15 +28,15 @@
   }
 </script>
 
-<div class="bg-gray-100 p-3 text-lg text-center rounded-md">
+<div class="bg-gray-100 p-10 my-10 text-lg text-center rounded-md shadow-lg">
   <div class="text-rose-600">{getError}</div>
   <div>
     <input
-      class="bg-white shadow-lg border rounded focus:outline-none p-1"
+      class="bg-white shadow-lg rounded focus:outline-blue-300 hover:border-blue-300 border-2 transition-all p-1"
       type="text"
       bind:value={input}
     />
-    <button class="m-1 border shadow-lg py-1 px-2 bg-white rounded hover:text-slate-600" on:click={addTodolist}>add</button>
+    <button class="m-1 border-2 shadow-lg py-1 px-2 bg-white rounded hover:text-slate-600 hover:border-blue-300 transition-all focus:outline-blue-300" on:click={addTodolist}>add</button>
   </div>
   {#each todoList as list}
     <div>
@@ -44,7 +44,6 @@
       class="scale-150 m-2"
         type="checkbox"
         bind:checked={list.done}
-        on:change={(e) => console.log(e)}
       />
       {#if list.done}
         <strike class="text-slate-400">
