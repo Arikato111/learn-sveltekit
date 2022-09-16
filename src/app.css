@@ -24,7 +24,22 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: var(--primary-color);
-  background: linear-gradient(180deg, aqua, pink 60%);
+  background: linear-gradient(-45deg, aqua, pink 60%);
+  /* animation: bg-tiw 5s infinite; */
+  background-size: 400% 400%;
+	animation: bg-tiw 15s ease infinite;
+}
+
+@keyframes bg-tiw {
+  0% {
+    background-position: 0% 50%;
+  } 
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body::before {
